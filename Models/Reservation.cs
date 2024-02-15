@@ -18,7 +18,7 @@ public class Reservation
         {
             if (Campsite?.CampsiteType != null)
             {
-                return Campsite.CampsiteType.FeePerNight * TotalNights + _baseReservationFee;
+                return Campsite.CampsiteType.FeePerNight * TotalNights + _reservationBaseFee;
             }
             return null;
         }
